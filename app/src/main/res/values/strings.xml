@@ -5,7 +5,7 @@
     <string name="company_desc">MicroLending Platform for Low Income group</string>
     <string name="title_activity_home">Home</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Setting</string>
     <string name="data_url">http://ec2-54-69-219-242.us-west-2.compute.amazonaws.com:9000/v1/customer/data_log/</string>
     <string name="network_usage">Network Usage</string>
     <string name="logout">logout</string>
