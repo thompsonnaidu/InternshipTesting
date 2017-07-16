@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.test.internship.internshiptesting.ui.Login">
+
+    <ImageView
+        android:id="@+id/upwardlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/upward_logo_size"
+        android:layout_height="@dimen/upward_logo_size"
+        android:layout_marginTop="@dimen/upward_logo_margin"
+        android:layout_marginBottom="@dimen/upward_logo_margin_bottom"
+        android:src="@drawable/upwards"/>
+
+    <TextView
+        android:id="@+id/company_name"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/welcome_string"
+        android:textColor="@color/green"
+        android:layout_below="@+id/upwardlogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/company_desc"
+        android:layout_below="@+id/company_name"
+        android:paddingTop="10dp"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/company_desc"
+        android:textColor="@color/gray"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company_desc"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:id="@+id/emailTextInput"
+            >
+
+            <EditText
+                android:id="@+id/emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="USERNAME"
+                android:inputType="textEmailAddress"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:id="@+id/passTextInput"
+            >
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:onClick="onLogin"
+            android:background="@drawable/btn_sign_in"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
