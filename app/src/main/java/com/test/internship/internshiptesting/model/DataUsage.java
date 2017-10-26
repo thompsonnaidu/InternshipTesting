@@ -5,6 +5,8 @@ import android.graphics.drawable.Drawable;
 /**
  * Created by Thompson on 16-07-2017.
  */
+//Network history information
+
 
 public class DataUsage {
 
@@ -18,7 +20,7 @@ public class DataUsage {
     public void setIcon(Drawable icon) {
         this.icon = icon;
     }
-
+//Name of the application
     public String getName() {
         return name;
     }
@@ -26,7 +28,7 @@ public class DataUsage {
     public void setName(String name) {
         this.name = name;
     }
-
+//Uploaded Data
     public String getUpload() {
         return upload;
     }
@@ -34,7 +36,7 @@ public class DataUsage {
     public void setUpload(String upload) {
         this.upload = upload;
     }
-
+//Downloaded Data
     public String getDownload() {
         return download;
     }
@@ -42,7 +44,7 @@ public class DataUsage {
     public void setDownload(String download) {
         this.download = download;
     }
-
+//total data
     public String getTotal() {
         return total;
     }
