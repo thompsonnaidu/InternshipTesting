@@ -1,5 +1,5 @@
 package com.test.internship.internshiptesting.model;
-
+//import java.util.*
 import android.graphics.drawable.Drawable;
 
 /**
